@@ -1,29 +1,190 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Hank Quinlan, Horrible Cop</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
-	</body>
+<html lang="ro">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ghid de utilizare Hege - headgear web assistant</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body prefix="schema: http://schema.org/">
+    <article typeof="schema:ScholarlyArticle">
+        <header>
+            <h1 property="schema:name">
+                Headgear Web Assistant (<span role="doc-subtitle" property="shcema:alternateName">HEGE</span>) - Ghid
+                de utilizare
+            </h1>
+            <div role="contentinfo" typeof="sa:AuthorsList">
+                <h2>Autorii:</h2>
+                <ul>
+                    <li typeof="schema:author"><a href="https://github.com/MariusParasca" typeof="schema:Person">Parasca
+                            Marius</a></li>
+                    <li typeof="schema:author"><a href="https://github.com/victorcotofana" typeof="schema:Person">Cotofana
+                            Victor</a></li>
+                </ul>
+            </div>
+        </header>
+        <aside typeof="schema:WPSideBar" id="cuprins">
+            <h2>Cuprins:</h2>
+            <ol>
+                <li><a href="#descrierea">Descrierea proiectului</a></li>
+                <li><a href="#navigarea">Navigarea</a></li>
+                <li><a href="#home_page">Home Page</a></li>
+                <li><a href="#acc_page">All Accessories Page</a></li>
+                <li><a href="#item_page">Item Page</a></li>
+                <li><a href="#favorites_page">Favorites Page</a></li>
+                <li><a href="#cart_page">Cart Page</a></li>
+                <li><a href="#user_page">User Page</a></li>
+            </ol>
+        </aside>
+        <section typeof="schema:description" id="descrierea">
+            <h2>1. Descrierea proiectului</h2>
+            <p>
+                Ideea aplicatiei este de a concepe un magazin web de accesorii de imbracaminte pentru acoperit
+                crestetul capului.
+                Utilizatorul are posibilitatea de a proba accesoriile fara a necesita prezenta fizica folosind
+                realitatea
+                imbogatita (AR – Augmented Reality). Pe langa lista de accesorii valabile in magazinul online,
+                utilizatorului ii vor fi
+                oferite o lista de recomandari: in functie de sezonul curent si in functie de preferinta utilizatorului
+                privind culoarea accesoriilor.
+            </p>
+        </section>
+        <section id="navigarea">
+            <h2>2. Navigarea</h2>
+            <p>Utilizatorul are acces la urmatoarele pagini:</p>
+            <ul>
+                <li><a href="#home_page">Home Page</a></li>
+                <li><a href="#acc_page">All Accessories Page</a></li>
+                <li><a href="#item_page">Item Page</a></li>
+                <li><a href="#favorites_page">Favorites Page</a></li>
+                <li><a href="#cart_page">Cart Page</a></li>
+                <li><a href="#user_page">User Page</a></li>
+            </ul>
+            <p>
+                Toate paginile in afara de Item Page pot fi accesate din toolbar-ul aplicatiei.
+                Item page, pagina individuala a fiecarui accesoriu, este accesibila din pagina Home Page, All
+                Accessories sau Favorites Page, apasand pe imaginea accesoriului.
+            </p>
+        </section>
+        <section id="home_page">
+            <h2>3. Home Page</h2>
+            <p>
+                Prima pagina cu care interactioneaza utilizatorul este pagina principala. Aici utilizatorul poate gasi
+                mesajul de bun venit si ultimele 5 accesorii adaugate in magazinul virtual. In partea de sus a paginii
+                se afla toolbar-ul existent in toata aplicatia.
+            </p>
+            <div class="afterAndBefore">
+                <figure typeof="schema:image">
+                    <img class="webMarkup" src="./home_web.png">
+                    <figcaption>
+                        Pagina principala
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="acc_page">
+            <h2>4. All Accessories Page</h2>
+            <p>
+                In pagina de accesorii utilizatorul poate gasit toate accesoriile din magazin la ora actuala. In partea
+                stanga are doua card-uri cu selectie: <em>Categories</em> si <em>Filter By</em>.
+                Utilizatorul poate selecta ce categorie de accesorii vrea sa vada, iar apoi poate filtra aceste
+                accesorii pe baza culorii, genului, sau ordonarea pretului. Daca doreste poate elimina toate filtrele
+                selectate mai devreme.
+                Pentru a accesa pagina fiecarui accesoriu utilizatorul apasa imaginea accesoriului. Langa aceasta
+                imagine exista si un buton in forma de inima. Daca este apasat accesoriul este adaugat in lista de
+                favorite a utilizatorului.
+            </p>
+            <div class="afterAndBefore">
+                <figure typeof="schema:image">
+                    <img class="webMarkup" src="./accessory_web.png">
+                    <figcaption>
+                        Pagina de accesorii
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="item_page">
+            <h2>5. Item Page</h2>
+            <p>
+                Fiecare accesoriu isi are propria pagina, unde poate fi gasit pretul si descrierea item-ului. La fel
+                este prezent si butonul de adaugare la favorite. Sub imaginea accesoriului se afla doua butoane: <em>Try
+                    it LIVE</em> si <em>Add to cart</em>.
+                <em>Add to cart</em> adauga produsul in cosul virtual al utilizatorului. <em>Try it LIVE</em> porneste
+                camera Web al utilizatorului unde acesta poate proba accesoriul virtual. In timp ce probeaza
+                accesoriul, utilizatorul isi poate face o poza. Toate pozele facute de utilizator sunt salvate local,
+                si pot fi accesate in pagina utilizatorului (User Page). In partea de jos a paginii se afla
+                recomandarile pentru utilizator. Aceseta sunt randate in dependenta de preferinta utilizatorului pentru
+                culorile accesoriilor si sezonul curent.
+            </p>
+            <div class="afterAndBefore">
+                <figure typeof="schema:image">
+                    <img class="webMarkup" src="./item_web.png">
+                    <figcaption>
+                        Pagina unui produs individual
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="afterAndBefore">
+                <figure typeof="schema:image">
+                    <img class="webMarkup" src="./item_web2.png">
+                    <figcaption>
+                        Utilizatorul probeaza accesoriul virtual
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="favorites_page">
+            <h2>6. Favorites Page</h2>
+            <p>
+                Dupa ce utilizatorul apasa pe butonul in forma de inima a unui accesoriu gasit pe parcursul
+                aplicaitiei, toate accesoriile favorite vor fi gasite aici. Utilizatorul poate accesa pagina
+                individuala a accesoriilor apasand pe imaginea lor respectiva, sau poate elimina accesoriul din pagina
+                de favorite apasand din nou pe butonul in forma de inima.
+            </p>
+            <div class="afterAndBefore">
+                <figure typeof="schema:image">
+                    <img class="webMarkup" src="./favorite_web.png">
+                    <figcaption>
+                        Pagina de favorite
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="cart_page">
+            <h2>7. Cart Page</h2>
+            <p>
+                Apasand pe butonul <em>Add to cart</em> utilizatorul este redirectionat la pagina cosului virtual. Aici
+                isi poate vedea toate accesoriile din cosul sau. Utilizatorul poate elimina un accesoriu din cos, sau
+                poate simula <em>Check Out</em>-ul.
+            </p>
+            <div class="afterAndBefore">
+                <figure typeof="schema:image">
+                    <img class="webMarkup" src="./cart_web.png">
+                    <figcaption>
+                        Pagina cosului virtual
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="cart_page">
+            <h2>8. User Page</h2>
+            <p>
+                In pagina utilizatorului pot fi gasite setarile pentru preferinta culorii accessoriilor si imaginile
+                salvate de utilizator. Imaginile pot fi sterse sau descarcate direct de aici.
+            </p>
+            <div class="afterAndBefore">
+                <figure typeof="schema:image">
+                    <img class="webMarkup" src="./user_web.png">
+                    <figcaption>
+                        Pagina utilizatorului
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    </article>
+</body>
+
 </html>
-4 Commit index.html. At the b
